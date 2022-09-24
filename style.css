@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@300;400;500&family=Ramaraja&family=Red+Hat+Mono:wght@500&family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 1s;
+}
+
+h1 {
+    margin-bottom: 150px;
+    font-weight: 400;
+}
+
+
+.night {
+    background-color: #262626;
+    color: #fff;
+    transition-duration: 1s;
+}
+
+.button {
+    width: 250px;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-radius: 48px;
+    position: relative;
+    box-shadow: 6px 4px 8px 0px #999999 inset , -2px -2px 4px 0px #999999 inset;
+    cursor: pointer;
+}
+
+.button-night {
+    background-color: #5c5c5c;box-shadow: 6px 4px 8px 0px #000000 inset , -2px -2px 4px 0px #000000 inset;
+}
+
+.toggle-btn {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-image: url(image/sun.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-duration: .5s;
+}
+
+.toggle-btn-moon {
+    left: 152px;
+    width: 100px;
+    height: 100px;
+    background-image: url(image/moon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition-duration: .5s;
+}
